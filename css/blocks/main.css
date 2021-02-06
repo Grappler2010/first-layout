@@ -1,0 +1,66 @@
+.main {
+  height: 1190px;
+}
+
+.block__dots {
+  position: absolute;
+  background-image: url("../../images/background/dots.svg");
+  background-repeat: no-repeat;
+  height: 285px;
+  width: 1440px;
+  z-index: 1;
+  background-position: top right;
+  margin: 17px 0 0 0;
+}
+
+.block__rectangle {
+  position: absolute;
+  background-image: url("../../images/background/rectangle.svg");
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 767.91px;
+  z-index: -2;
+  margin: -96px 0 0 0;
+  background-position: top right;
+}
+
+.block__title {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  padding: 75px 0 0 0;
+  letter-spacing: -3px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.text-color--red {
+  color: var(--red-dark);
+}
+
+.text--underline {
+  position: relative;
+  display: inline;
+}
+
+.text--underline::before {
+  position: absolute;
+  display: block;
+  width: 191px;
+  height: 51px;
+  background-color: var(--green-light);
+  z-index: -1;
+  content: " ";
+  top: 62px;
+  border-radius: 99px;
+  left: calc(30% - 191px/2 + 45.5px);
+}
+
+.block__subtitle {
+  position: relative;
+  width: 770px;
+  height: 80px;
+  margin: 16px auto 0 auto;
+  letter-spacing: -1px;
+  text-align: center;
+}

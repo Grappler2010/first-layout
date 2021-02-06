@@ -7,71 +7,86 @@
 }
 
 .container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1440px;
-  height: 100%;
-  padding:15px 15px 17px 15px;
-  border-radius: 16px 16px 0px 0px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.header {
-  height: 128px;
-  padding: 15px 15px 17px 15px;
-}
-
-.header__inner {
   display: flex;
-  align-items: center;
+  height: 96px;
   justify-content: space-between;
+  box-shadow: 0px 0px 5px black;
+  z-index: 1;
+  background-color: var(--white);
+}
+
+.figure {
+  display: flex;
+  margin: 15px 0 17px 135px;
+}
+
+.figure__title {
+  display: flex;
+  width: 128px;
+  font-weight: bold;
+  font-size: 48px;
+  align-items: flex-end;
+  letter-spacing: -1px;
 }
 
 .nav {
-  width: 100%;
-  height: 100%;
-  max-width: 630px;
+  width: 630px;
+  margin: 15px 0 17px 0;
 }
 
 .nav__list {
   display: flex;
+  height: 48px;
+  margin: 8px 0;
   justify-content: space-around;
-  padding-top: 16px;
-  height: 64px;
 }
 
-.nav__list-item:first-child {
-  list-style-type: none;
+.nav__list-item-link {
+  display: flex;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 32px;
+  align-items: center;
+  text-align: center;
+  height: 48px;
+  color: var(--purple-dark);
+  margin-left: 16px;
+}
+
+.nav__list-item-link:hover {
+  color: var(--black);
+  font-weight: 700;
+  transition: 0.5s;
 }
 
 .nav__list-item::marker {
   color: var(--yellow-dark);
 }
 
-.nav__list-item-link {
-  text-decoration: none;
-  color: var(--purple-dark);
-}
-
-.nav__list-item-link:focus {
-  color: var(--black);
-  font-weight: bold;
+.nav__list-item:first-child {
+  list-style-type: none;
 }
 
 .header__sign-in {
-  display: flex;
-  justify-content: center;
-  width: 390px;
+  width: 170px;
+  height: 64px;
+  margin: 15px 135px 17px 0;
 }
 
 .header__sign-in-btn {
-  width: 170px;
-  height: 64px;
-  border-radius: 999px;
-  background-color: var(--purple-dark);
-  border: 1px solid var(--purple-dark);
-  font-weight: bold;
-  color: var(--white);
-  font-family: Inter;
+  width: inherit;
+  height: inherit;
   font-size: 24px;
+  font-weight: bold;
+  font-family: inter;
+  color: var(--purple-dark);
+  background-color: var(--white);
+  border: 1px solid var(--purple-dark);
+  border-radius: 999px;
+}
+
+.header__sign-in-btn:hover {
+  color: var(--white);
+  background-color: var(--purple-dark);
+  transition: 0.5s;
 }
